@@ -5,6 +5,7 @@
 # Include known language source files
 !*.c
 !*.cpp
+!*.tpp
 !*.cc
 !*.cxx
 !*.h
