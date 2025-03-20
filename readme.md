@@ -1,9 +1,9 @@
-# RxPointer
+# RefCountedPtr
 
-RxPointer is a custom C++ shared pointer implementation designed to manage the lifetime of dynamically allocated objects. It uses reference counting to track shared ownership, automatically deleting the object when the last reference is destroyed.
+RefCountedPtr is a custom C++ shared pointer implementation designed to manage the lifetime of dynamically allocated objects. It uses reference counting to track shared ownership, automatically deleting the object when the last reference is destroyed.
 
 ## Features
-- **Shared Ownership**: Multiple RxPointer instances can share the same object.
+- **Shared Ownership**: Multiple RefCountedPtr instances can share the same object.
 - **Automatic Cleanup**: Deletes the managed object when no references remain.
 - **Variadic Constructor**: Supports constructing objects with any number of arguments.
 - **Lightweight**: Minimal overhead for simple memory management.
