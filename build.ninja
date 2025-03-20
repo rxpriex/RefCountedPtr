@@ -34,7 +34,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Asus/Desktop/VRepos/RxPointer/
+cmake_ninja_workdir = C$:/Users/Rxpriex/Desktop/VRepos/RxPointer/
 # =============================================================================
 # Object build statements for EXECUTABLE target main
 
@@ -44,7 +44,7 @@ cmake_ninja_workdir = C$:/Users/Asus/Desktop/VRepos/RxPointer/
 
 build cmake_object_order_depends_target_main: phony || .
 
-build CMakeFiles/main.dir/src/main.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Users/Asus/Desktop/VRepos/RxPointer/src/main.cpp || cmake_object_order_depends_target_main
+build CMakeFiles/main.dir/src/main.cpp.obj: CXX_COMPILER__main_unscanned_ C$:/Users/Rxpriex/Desktop/VRepos/RxPointer/src/main.cpp || cmake_object_order_depends_target_main
   DEP_FILE = CMakeFiles\main.dir\src\main.cpp.obj.d
   FLAGS = --target=x86_64-w64-windows-gnu -g
   OBJECT_DIR = CMakeFiles\main.dir
@@ -73,7 +73,7 @@ build out/main.exe: CXX_EXECUTABLE_LINKER__main_ CMakeFiles/main.dir/src/main.cp
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Asus\Desktop\VRepos\RxPointer && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rxpriex\Desktop\VRepos\RxPointer && C:\msys64\mingw64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -84,7 +84,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Asus\Desktop\VRepos\RxPointer && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\Asus\Desktop\VRepos\RxPointer -BC:\Users\Asus\Desktop\VRepos\RxPointer"
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\Rxpriex\Desktop\VRepos\RxPointer && C:\msys64\mingw64\bin\cmake.exe --regenerate-during-build -SC:\Users\Rxpriex\Desktop\VRepos\RxPointer -BC:\Users\Rxpriex\Desktop\VRepos\RxPointer"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -104,7 +104,7 @@ build main.exe: phony out/main.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Asus/Desktop/VRepos/RxPointer
+# Folder: C:/Users/Rxpriex/Desktop/VRepos/RxPointer
 
 build all: phony out/main.exe
 
