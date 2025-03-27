@@ -28,14 +28,14 @@ private:
    * @param data Pointer to the object to manage.
    * @param shared_references Pointer to the atomic reference count.
    */
-  void init_data(T *, std::atomic<int> *);
+  virtual void init_data(T *, std::atomic<int> *);
 
   /**
    * @brief Releases the managed object and its reference count.
    *
    * Deletes the managed object and reference count when no references remain.
    */
-  void release_data();
+  virtual void release_data();
 
 public:
   /**
@@ -81,7 +81,7 @@ public:
    *
    * Decrements the reference count and releases resources if it reaches zero.
    */
-  ~RefCountedPtr();
+  virtual ~RefCountedPtr();
 
   /**
    * @brief Retrieves the raw pointer to the managed object.
@@ -90,7 +90,7 @@ public:
    *
    * @return T* The raw pointer to the managed object.
    */
-  T *get_data();
+  virtual T *get_data();
 
   /**
    * @brief Assignment operator for sharing ownership.
@@ -101,7 +101,7 @@ public:
    * @param other The RefCountedPtr to assign from.
    * @return RefCountedPtr<T>& Reference to this RefCountedPtr.
    */
-  RefCountedPtr<T> &operator=(RefCountedPtr<T> &);
+  virtual RefCountedPtr<T> &operator=(RefCountedPtr<T> &);
 };
 
 #include "RefCountedPtr.tpp"
